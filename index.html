@@ -1,30 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meine schöne Webseite</title>
-    <script src="https://code.jquery.com/jquery-4.0.0.js"
-        integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 
-<body>
+<body id="top">
 
-    <nav>
-        <a href="index.html">Start</a> |
-        <a href="about.html">Über mich</a> |
-        <a href="projects.html">Projekte</a> |
-        <a href="cv.html">Lebenslauf</a> |
-        <a href="contact.html">Kontakt</a> |
-        <a href="impressum.html">Impressum</a>
-    </nav>
+    <header>
+        <nav>
+            <a href="index.html" aria-current="page">Start</a> |
+            <a href="about.html">Über mich</a> |
+            <a href="projects.html">Projekte</a> |
+            <a href="cv.html">Lebenslauf</a> |
+            <a href="contact.html">Kontakt</a> |
+            <a href="impressum.html">Impressum</a>
+        </nav>
+    </header>
 
-    <h1>Meine schöne Webseite</h1>
-    <p>Hallo Willkommen</p>
+    <main>
+        <section>
+            <h1>Meine schöne Webseite</h1>
+            <p>Hallo Willkommen</p>
+        </section>
+    </main>
+
     <footer id="footer"></footer>
-    <script>$("footer").load("components/footer.component");</script>
+
+    <script>
+        $("#footer").load("components/footer.component");
+    </script>
 
 </body>
 
