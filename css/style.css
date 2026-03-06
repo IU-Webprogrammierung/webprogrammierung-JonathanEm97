@@ -50,3 +50,26 @@ footer {
     margin-top: 2rem;
     text-align: center;
 }
+
+/* Projects */
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.projects article {
+  padding: 1rem;
+  border: 1px solid #ddd;
+}
+
+/* Responsive */
+
+@media (min-width: 768px) {
+
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
