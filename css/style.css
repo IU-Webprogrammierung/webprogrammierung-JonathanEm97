@@ -64,6 +64,13 @@ footer {
   border: 1px solid #ddd;
 }
 
+.projects article {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+}
+
 /* Responsive */
 
 @media (min-width: 768px) {
