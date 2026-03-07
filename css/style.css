@@ -20,6 +20,7 @@ nav {
     gap: 1rem;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 nav a {
@@ -39,10 +40,11 @@ nav a:focus {
 }
 
 nav img {
-    height: 60px;
+    height: 50px;
     vertical-align: middle;
     margin-right: 10px;
 }
+
 
 /* Hauptbereich */
 
