@@ -17,10 +17,9 @@ header {
 
 nav {
     display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    gap: 1rem;    
 }
 
 nav a {
@@ -39,11 +38,35 @@ nav a:focus {
     outline-offset: 2px;
 }
 
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+/* Zustand wenn Burger-Menü geöfnet ist */
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+}
+
 nav img {
     height: 50px;
     vertical-align: middle;
     margin-right: 10px;
 }
+
+.burger-menu {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
 
 
 /* Hauptbereich */
@@ -108,10 +131,6 @@ footer {
 
 @media (min-width: 768px) {
 
-    nav {
-        justify-content: space-between;
-    }
-
     main {
         padding: 2rem;
     }
@@ -136,6 +155,20 @@ footer {
 
     .projects {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+/* Tablet und Mobile Navigation */
+
+@media (max-width: 1024px) {
+
+    .burger-menu {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
     }
 
 }

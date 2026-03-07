@@ -13,16 +13,23 @@
   <header>
     <nav>
 
-    <a href="index.html">
-      <img class="logo" src="images/logo.png" alt="Logo Jonathan Eidam">
-    </a>
+      <a href="index.html">
+        <img class="logo" src="images/logo.png" alt="Logo Jonathan Eidam">
+      </a>
 
-      <a href="index.html">Start</a> 
-      <a href="about.html">Über mich</a> 
-      <a href="projects.html">Projekte</a> 
-      <a href="cv.html">Lebenslauf</a> 
-      <a href="contact.html">Kontakt</a> 
-      <a href="impressum.html" aria-current="page">Impressum</a>
+    <button class="burger-menu" aria-label="Menü öffnen">
+      ☰
+    </button>
+
+      <div class="nav-links">
+        <a href="index.html">Start</a>
+        <a href="about.html">Über mich</a>
+        <a href="projects.html">Projekte</a>
+        <a href="cv.html">Lebenslauf</a>
+        <a href="contact.html">Kontakt</a>
+        <a href="impressum.html" aria-current="page">Impressum</a>
+      </div>
+
     </nav>
   </header>
 
@@ -50,6 +57,10 @@
   <footer></footer>
   <script>
     $("footer").load("components/footer.component");
+/* JavaScript Burger-Menü */
+  $(".burger-menu").click(function () {
+    $(".nav-links").toggleClass("active");
+  });
   </script>
 </body>
 
