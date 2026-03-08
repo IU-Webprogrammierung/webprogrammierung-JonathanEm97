@@ -1,6 +1,19 @@
-<nav>
-    <a href="index.html">Start</a> |
-    <a href="about.html">Über mich</a> |
-    <a href="projects.html">Projekte</a> |
+<div class="footer-content">
+  <div class="footer-brand">
+    <p>Jonathan Eidam</p>
+    <p>Portfolio-Webseite</p>
+  </div>
+
+  <div class="footer-links">
+    <a href="index.html">Start</a>
+    <a href="about.html">Über mich</a>
+    <a href="projects.html">Projekte</a>
+    <a href="cv.html">Lebenslauf</a>
     <a href="contact.html">Kontakt</a>
-</nav>
+    <a href="impressum.html">Impressum</a>
+  </div>
+
+  <div class="footer-meta">
+    <a href="#top">Nach oben</a>
+  </div>
+</div>
