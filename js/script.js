@@ -7,6 +7,9 @@ $(document).ready(function () {
         // Dieser Code läuft erst, wenn die Navigation fertig geladen wurde
         $(".burger-menu").click(function () {
             $(".nav-links").toggleClass("active");
+               // Accessibility: aria-expanded aktualisieren
+            const isOpen = $(".nav-links").hasClass("active");
+            $(this).attr("aria-expanded", isOpen);
         });
 
         // Aktuelle Seite im Menü markieren
