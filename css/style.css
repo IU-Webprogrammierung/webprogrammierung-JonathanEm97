@@ -80,9 +80,51 @@ main {
 
 footer {
     background-color: #f5f5f5;
-    padding: 1rem;
+    padding: 2rem 1rem;
     margin-top: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
     text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-brand p:first-child {
+    font-weight: bold;
+}
+
+.footer-meta a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 1px solid #333;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.footer-meta a:hover {
+    background-color: #333;
+    color: white;
 }
 
 /* ========================= */
@@ -136,6 +178,12 @@ footer {
 
     .projects {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
     }
 
 }
