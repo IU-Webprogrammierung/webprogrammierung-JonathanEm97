@@ -4,16 +4,28 @@ $(document).ready(function () {
     // Navigation laden
     $("nav").load("components/nav.component", function () {
 
-        // Dieser Code läuft erst, wenn die Navigation fertig geladen wurde
-        $(".burger-menu").click(function () {
+        function toggleMenu() {
             $(".nav-links").toggleClass("active");
-               // Accessibility: aria-expanded aktualisieren
+
             const isOpen = $(".nav-links").hasClass("active");
-            $(this).attr("aria-expanded", isOpen);
+            $(".burger-menu").attr("aria-expanded", isOpen);
+
+            // Burger ausblenden wenn Overlay offen ist
+            $(".burger-menu").toggleClass("hidden", isOpen);
+        }
+
+        // Burger-Menü öffnen
+        $(".burger-menu").click(function () {
+            toggleMenu();
+        });
+
+        // Overlay-Menü schließen
+        $(".overlay-close").click(function () {
+            toggleMenu();
         });
 
         // Aktuelle Seite im Menü markieren
-        const currentPage = window.location.pathname.split("/").pop();
+        const currentPage = window.location.pathname.split("/").pop() || "index.html";
 
         $(".nav-links a").each(function () {
             if ($(this).attr("href") === currentPage) {

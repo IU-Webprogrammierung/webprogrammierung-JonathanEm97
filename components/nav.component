@@ -12,7 +12,11 @@
           <img src="images/logo.png" alt="Logo Jonathan Eidam">
         </a>
 
-        <a href="index.html" aria-current="page">Start</a>
+        <button class="overlay-close" aria-label="Menü schließen">
+          ✕
+        </button>
+
+        <a href="index.html">Start</a>
         <a href="about.html">Über mich</a>
         <a href="projects.html">Projekte</a>
         <a href="cv.html">Lebenslauf</a>

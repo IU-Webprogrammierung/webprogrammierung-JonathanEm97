@@ -6,11 +6,18 @@ body {
     line-height: 1.6;
 }
 
+/* verhindert Scrollen wenn Overlay-Menü geöffnet ist */
+body.menu-open {
+    overflow: hidden;
+}
+
 /* Header */
 
 header {
     background-color: #f5f5f5;
     padding: 1rem;
+    position: relative;
+    z-index: 1000;
 }
 
 /* Navigation */
@@ -38,6 +45,14 @@ nav a:focus {
     outline-offset: 2px;
 }
 
+/* Fokus-Zustände für Formulare und Buttons */
+input:focus,
+textarea:focus,
+button:focus {
+    outline: 2px solid #333;
+    outline-offset: 2px;
+}
+
 .nav-links {
     display: flex;
     gap: 2rem;
@@ -54,17 +69,26 @@ nav img {
     margin-right: 10px;
 }
 
-.burger-menu {
-    display: none;
+.burger-menu,
+.overlay-close {
+    width: 50px;
+    height: 50px;
     font-size: 2rem;
     background: none;
     border: none;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
 }
 
-header {
-    position: relative;
-    z-index: 1000;
+.burger-menu.hidden {
+    display: none;
+}
+
+.overlay-close {
+    display: none;
 }
 
 
@@ -250,6 +274,13 @@ footer {
 
     .nav-links.active .overlay-logo img {
         height: 50px;
+    }
+
+    .nav-links.active .overlay-close {
+    display: flex;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
     }
 
 }
