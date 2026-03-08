@@ -1,21 +1,26 @@
-// Wartet, bis das gesamte HTML-Dokument geladen ist,
-// bevor der JavaScript-Code ausgeführt wird
+// Wartet, bis das HTML-Dokument geladen ist
 $(document).ready(function () {
 
-  // Lädt den Inhalt der Datei "footer.component"
-  // automatisch in das <footer>-Element der Seite.
-  // Dadurch muss der Footer nicht auf jeder HTML-Seite einzeln stehen.
-  $("footer").load("components/footer.component");
+    // Navigation laden
+    $("nav").load("components/nav.component", function () {
 
-  // Event-Listener für den Burger-Button
-  // Wenn der Button geklickt wird...
-  $(".burger-menu").click(function () {
+        // Dieser Code läuft erst, wenn die Navigation fertig geladen wurde
+        $(".burger-menu").click(function () {
+            $(".nav-links").toggleClass("active");
+        });
 
-    // ...wird bei dem Element mit der Klasse "nav-links"
-    // die CSS-Klasse "active" ein- oder ausgeschaltet.
-    // Dadurch öffnet bzw. schließt sich das Overlay-Menü.
-    $(".nav-links").toggleClass("active");
+        // Aktuelle Seite im Menü markieren
+        const currentPage = window.location.pathname.split("/").pop();
 
-  });
+        $(".nav-links a").each(function () {
+            if ($(this).attr("href") === currentPage) {
+                $(this).attr("aria-current", "page");
+            }
+        });
+
+    });
+
+    // Footer laden
+    $("footer").load("components/footer.component");
 
 });
