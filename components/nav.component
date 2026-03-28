@@ -1,25 +1,36 @@
-      <a href="index.html">
-        <img src="images/logo.png" alt="Logo Jonathan Eidam">
-      </a>
+<a href="index.html" class="brand-link" aria-label="Zur Startseite">
+  <img src="images/logo.png" alt="Logo Jonathan Eidam">
+</a>
 
-      <button class="burger-menu" aria-label="Menü öffnen" aria-expanded="false" >
-        ☰
-      </button>
+<button
+  type="button"
+  class="burger-menu"
+  aria-label="Menü öffnen"
+  aria-expanded="false"
+  aria-controls="site-menu">
+  <span aria-hidden="true">☰</span>
+</button>
 
-      <div class="nav-links">
+<div class="nav-overlay" id="site-menu">
 
-        <a href="index.html" class="overlay-logo">
-          <img src="images/logo.png" alt="Logo Jonathan Eidam">
-        </a>
+  <a href="index.html" class="overlay-logo" aria-label="Zur Startseite">
+    <img src="images/logo.png" alt="Logo Jonathan Eidam">
+  </a>
 
-        <button class="overlay-close" aria-label="Menü schließen">
-          ✕
-        </button>
+  <button
+    type="button"
+    class="overlay-close"
+    aria-label="Menü schließen">
+    <span aria-hidden="true">✕</span>
+  </button>
 
-        <a href="index.html">Start</a>
-        <a href="about.html">Über mich</a>
-        <a href="projects.html">Projekte</a>
-        <a href="cv.html">Lebenslauf</a>
-        <a href="contact.html">Kontakt</a>
-        <a href="impressum.html">Impressum</a>
-      </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Start</a></li>
+    <li><a href="about.html">Über mich</a></li>
+    <li><a href="projects.html">Projekte</a></li>
+    <li><a href="cv.html">Lebenslauf</a></li>
+    <li><a href="contact.html">Kontakt</a></li>
+    <li><a href="impressum.html">Impressum</a></li>
+  </ul>
+
+</div>

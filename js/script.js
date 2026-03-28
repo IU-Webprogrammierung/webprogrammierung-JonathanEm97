@@ -1,41 +1,51 @@
-// Wartet, bis das HTML-Dokument geladen ist
-$(document).ready(function () {
+// Navigation laden (wird in <nav> eingefügt)
+$("nav").load("components/nav.component", function () {
 
-    // Navigation laden
-    $("nav").load("components/nav.component", function () {
+    // Funktion zum Öffnen/Schließen des Menüs
+    function toggleMenu() {
 
-        function toggleMenu() {
-            $(".nav-links").toggleClass("active");
+        // Overlay ein-/ausblenden
+        $(".nav-overlay").toggleClass("active");
 
-            const isOpen = $(".nav-links").hasClass("active");
-            $(".burger-menu").attr("aria-expanded", isOpen);
+        // Prüfen, ob Menü geöffnet ist
+        const isOpen = $(".nav-overlay").hasClass("active");
 
-            // Burger ausblenden wenn Overlay offen ist
-            $(".burger-menu").toggleClass("hidden", isOpen);
-        }
+        // Accessibility: Zustand für Screenreader setzen
+        $(".burger-menu").attr("aria-expanded", isOpen);
 
-        // Burger-Menü öffnen
-        $(".burger-menu").click(function () {
-            toggleMenu();
-        });
+        // Burger-Button ausblenden, wenn Menü offen ist
+        $(".burger-menu").toggleClass("hidden", isOpen);
 
-        // Overlay-Menü schließen
-        $(".overlay-close").click(function () {
-            toggleMenu();
-        });
+        // Scrollen im Hintergrund verhindern
+        $("body").toggleClass("menu-open", isOpen);
+    }
 
-        // Aktuelle Seite im Menü markieren
-        const currentPage = window.location.pathname.split("/").pop() || "index.html";
-
-        $(".nav-links a").each(function () {
-            if ($(this).attr("href") === currentPage) {
-                $(this).attr("aria-current", "page");
-            }
-        });
-
+    // Klick auf Burger → Menü öffnen
+    $(".burger-menu").on("click", function () {
+        toggleMenu();
     });
 
-    // Footer laden
-    $("footer").load("components/footer.component");
+    // Klick auf X → Menü schließen
+    $(".overlay-close").on("click", function () {
+        toggleMenu();
+    });
+
+    // Optional: Menü schließen, wenn ein Link geklickt wird (Mobile UX)
+    $(".nav-links a").on("click", function () {
+        toggleMenu();
+    });
+
+    // Aktuelle Seite im Menü markieren (Accessibility)
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
+    $(".nav-links a").each(function () {
+        if ($(this).attr("href") === currentPage) {
+            $(this).attr("aria-current", "page");
+        }
+    });
 
 });
+
+
+// Footer laden (wird in <footer> eingefügt)
+$("footer").load("components/footer.component");
