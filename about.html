@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Über mich</title>
   <link rel="stylesheet" href="css/style.css" />
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
   <script src="js/script.js" defer></script>
 </head>
 
@@ -16,26 +16,75 @@
   </header>
 
   <main>
-    <section>
+    <section class="about-page">
       <h1>Über mich</h1>
-      <p>Ich interessiere mich für Webentwicklung, digitale Technologien und
-        moderne Gestaltung von Webseiten. Dieses Portfolio ist Teil meines
-        Studiums und dient dazu, meine Kenntnisse in HTML, CSS und
-        Webdesign zu demonstrieren.</p>
-      <h2>Skills</h2>
 
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Responsive Webdesign</li>
-        <li>Git & Versionskontrolle</li>
-        <li>Grundlagen der Webentwicklung</li>
-      </ul>
+      <div class="about-content">
+        <div class="about-image">
+          <img src="images/ueber_mich.png" alt="Porträt von Jonathan Eidam">
+        </div>
+
+        <section class="about-career">
+          <h2>Werdegang</h2>
+
+          <p>
+            Ich studiere UX-Design und beschäftige mich mit der Gestaltung
+            digitaler Produkte, nutzerfreundlicher Strukturen und der
+            Verbindung von Design und technischer Umsetzung.
+          </p>
+
+          <p>
+            Im Studium arbeite ich an Projekten, in denen Konzeption,
+            Wireframing, visuelle Gestaltung und Webentwicklung
+            zusammenkommen. Dabei interessiert mich besonders, wie aus einer
+            Idee eine klar strukturierte und benutzbare Website entsteht.
+          </p>
+
+          <p>
+            Im Modul Webprogrammierung vertiefe ich meine Kenntnisse in HTML,
+            CSS, Responsive Webdesign und barrierearmen Lösungen. Ziel ist es,
+            Inhalte nicht nur optisch ansprechend, sondern auch verständlich
+            und zugänglich darzustellen.
+          </p>
+
+          <p>
+            Langfristig möchte ich digitale Erlebnisse gestalten, die sowohl
+            funktional als auch visuell überzeugend sind und auf
+            unterschiedlichen Geräten zuverlässig funktionieren.
+          </p>
+        </section>
+
+        <section class="social-links">
+          <h2>Social Links</h2>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/jonathan-eidam/" aria-label="LinkedIn Profil">LinkedIn</a>
+            <a href="https://www.xing.com/profile/Jonathan_Eidam/web_profiles" aria-label="Xing Profil">Xing</a>
+            <a href="mailto:jonathan-eidam@web.de" aria-label="E-Mail schreiben">E-Mail</a>
+          </div>
+        </section>
+
+        <section class="about-skills">
+          <h2>Fähigkeiten</h2>
+
+          <div class="about-skills-grid">
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Responsive Webdesign</li>
+            </ul>
+
+            <ul>
+              <li>Git & Versionskontrolle</li>
+              <li>Semantische Seitenstruktur</li>
+              <li>Grundlagen der Webentwicklung</li>
+            </ul>
+          </div>
+        </section>
+      </div>
     </section>
   </main>
 
   <footer></footer>
-
 </body>
 
 </html>
