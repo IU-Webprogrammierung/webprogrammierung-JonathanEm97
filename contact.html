@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kontakt</title>
   <link rel="stylesheet" href="css/style.css" />
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
   <script src="js/script.js" defer></script>
 </head>
 
@@ -16,42 +16,78 @@
   </header>
 
   <main>
-    <section>
-      <h1>Kontakt</h1>
+    <section class="contact-page">
+      <h1>Trete in Kontakt</h1>
 
-      <p>
-        Wenn du Fragen hast oder mit mir in Kontakt treten möchtest,
-        kannst du mich gerne über die folgenden Möglichkeiten erreichen.
-      </p>
+      <div class="contact-layout">
+        <div class="contact-form-column">
+          <section class="contact-form-section">
+            <h2>Kontaktformular</h2>
 
-      <p>Email: jonathan@example.de</p>
+            <form class="contact-form">
+              <div class="form-group">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" required>
+              </div>
 
-      <h2>Kontaktformular</h2>
+              <div class="form-group">
+                <label for="email">E-Mail *</label>
+                <input type="email" id="email" name="email" required>
+              </div>
 
-      <form class="contact-form">
-        <div class="form-group">
-          <label for="name">Name *</label>
-          <input type="text" id="name" name="name" required>
+              <div class="form-group">
+                <label for="subject">Betreff</label>
+                <input type="text" id="subject" name="subject">
+              </div>
+
+              <div class="form-group">
+                <label for="message">Nachricht *</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+
+              <button type="submit" class="button-link">Nachricht senden</button>
+            </form>
+          </section>
         </div>
 
-        <div class="form-group">
-          <label for="email">E-Mail *</label>
-          <input type="email" id="email" name="email" required>
+        <div class="contact-info-column">
+          <section class="contact-info-section">
+            <h2>Kontakt Information</h2>
+
+            <article class="contact-info-card">
+              <div class="contact-info-icon" aria-hidden="true">✉</div>
+              <div class="contact-info-text">
+                <h3>E-Mail</h3>
+                <p><a href="mailto:jonathan@example.de">jonathan@example.de</a></p>
+              </div>
+            </article>
+
+            <article class="contact-info-card">
+              <div class="contact-info-icon" aria-hidden="true">☎</div>
+              <div class="contact-info-text">
+                <h3>Telefon</h3>
+                <p>+49 000 0000000</p>
+              </div>
+            </article>
+
+            <article class="contact-info-card">
+              <div class="contact-info-icon" aria-hidden="true">⌂</div>
+              <div class="contact-info-text">
+                <h3>Standort</h3>
+                <p>Deutschland</p>
+              </div>
+            </article>
+
+            <div class="contact-map-placeholder">
+              <p>Karten Platzhalter</p>
+            </div>
+          </section>
         </div>
-
-        <div class="form-group">
-          <label for="message">Nachricht *</label>
-          <textarea id="message" name="message" required></textarea>
-        </div>
-
-        <button type="submit">Nachricht senden</button>
-      </form>
-
+      </div>
     </section>
   </main>
 
   <footer></footer>
-
 </body>
 
 </html>
