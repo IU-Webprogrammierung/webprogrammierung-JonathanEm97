@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projekte</title>
   <link rel="stylesheet" href="css/style.css" />
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
   <script src="js/script.js" defer></script>
 </head>
 
@@ -16,37 +16,170 @@
   </header>
 
   <main>
-    <section class="projects">
+    <section class="projects-page">
       <h1>Meine Projekte</h1>
 
-      <article>
-        <h2>Portfolio-Webseite</h2>
-        <p>
-          Entwicklung einer responsiven Portfolio-Webseite mit HTML und CSS
-          im Rahmen eines Studienprojekts.
-        </p>
-      </article>
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="images/logo.png" alt="Vorschaubild zum Projekt Portfolio-Webseite">
+          <h2>Portfolio-Webseite</h2>
+          <p>
+            Entwicklung einer mehrseitigen, responsiven Portfolio-Webseite mit
+            HTML, CSS und wiederverwendbaren Komponenten.
+          </p>
+          <div class="project-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+          </div>
+          <a href="#" class="card-link">Mehr ansehen</a>
+        </article>
 
-      <article>
-        <h2>Responsive Layout Übung</h2>
-        <p>
-          Umsetzung eines responsiven Layouts mit Flexbox und Media Queries,
-          um verschiedene Bildschirmgrößen zu unterstützen.
-        </p>
-      </article>
+        <article class="project-card">
+          <img src="images/logo.png" alt="Vorschaubild zum Projekt Responsive Layout">
+          <h2>Responsive Layout</h2>
+          <p>
+            Umsetzung flexibler Layouts mit Grid, Flexbox und Media Queries
+            für verschiedene Bildschirmgrößen.
+          </p>
+          <div class="project-tags">
+            <span>Grid</span>
+            <span>Responsive</span>
+          </div>
+          <a href="#" class="card-link">Mehr ansehen</a>
+        </article>
 
-      <article>
-        <h2>Navigation-Komponente</h2>
-        <p>
-          Entwicklung einer wiederverwendbaren Navigationsstruktur für
-          mehrere Seiten einer Website.
-        </p>
-      </article>
+        <article class="project-card">
+          <img src="images/logo.png" alt="Vorschaubild zum Projekt Navigation-Komponente">
+          <h2>Navigation-Komponente</h2>
+          <p>
+            Entwicklung einer wiederverwendbaren Navigation mit responsivem
+            Burger-Menü und Fokus auf Zugänglichkeit.
+          </p>
+          <div class="project-tags">
+            <span>Navigation</span>
+            <span>UX</span>
+          </div>
+          <a href="#" class="card-link">Mehr ansehen</a>
+        </article>
+
+        <article class="project-card">
+          <img src="images/logo.png" alt="Vorschaubild zum Projekt Kontaktformular">
+          <h2>Kontaktformular</h2>
+          <p>
+            Strukturierung und Gestaltung eines barrierearmen Formulars mit
+            semantischem HTML.
+          </p>
+          <div class="project-tags">
+            <span>Formular</span>
+            <span>Accessibility</span>
+          </div>
+          <a href="#" class="card-link">Mehr ansehen</a>
+        </article>
+
+        <article class="project-card">
+          <img src="images/logo.png" alt="Vorschaubild zum Projekt Footer-Komponente">
+          <h2>Footer-Komponente</h2>
+          <p>
+            Erstellung eines wiederverwendbaren Footers mit Navigation und
+            Back-to-top-Link.
+          </p>
+          <div class="project-tags">
+            <span>Footer</span>
+            <span>Komponente</span>
+          </div>
+          <a href="#" class="card-link">Mehr ansehen</a>
+        </article>
+
+        <article class="project-card">
+          <img src="images/logo.png" alt="Vorschaubild zum Projekt About-Seite">
+          <h2>Über-mich-Seite</h2>
+          <p>
+            Ausbau einer persönlichen Unterseite mit Bild, Werdegang,
+            Fähigkeiten und Social Links.
+          </p>
+          <div class="project-tags">
+            <span>Content</span>
+            <span>Layout</span>
+          </div>
+          <a href="#" class="card-link">Mehr ansehen</a>
+        </article>
+
+        <article class="project-card">
+          <img src="images/logo.png" alt="Vorschaubild zum Projekt Skills-Bereich">
+          <h2>Skills-Bereich</h2>
+          <p>
+            Entwicklung eines übersichtlichen Fähigkeiten-Bereichs mit
+            responsivem Raster und visueller Struktur.
+          </p>
+          <div class="project-tags">
+            <span>Skills</span>
+            <span>UI</span>
+          </div>
+          <a href="#" class="card-link">Mehr ansehen</a>
+        </article>
+
+        <article class="project-card">
+          <img src="images/logo.png" alt="Vorschaubild zum Projekt Komponentenstruktur">
+          <h2>Komponentenstruktur</h2>
+          <p>
+            Modularisierung wiederkehrender Bereiche wie Navigation und Footer
+            mit jQuery.
+          </p>
+          <div class="project-tags">
+            <span>jQuery</span>
+            <span>Modular</span>
+          </div>
+          <a href="#" class="card-link">Mehr ansehen</a>
+        </article>
+
+        <article class="project-card">
+          <img src="images/logo.png" alt="Vorschaubild zum Projekt Barrierefreiheit">
+          <h2>Barrierefreiheit</h2>
+          <p>
+            Verbesserung von Fokuszuständen, ARIA-Attributen und semantischer
+            HTML-Struktur.
+          </p>
+          <div class="project-tags">
+            <span>ARIA</span>
+            <span>WCAG</span>
+          </div>
+          <a href="#" class="card-link">Mehr ansehen</a>
+        </article>
+      </div>
+
+      <section class="featured-projects">
+        <h2>Ausgewählte Projekte</h2>
+
+        <div class="featured-projects-grid">
+          <article class="featured-project-card">
+            <img src="images/logo.png" alt="Vorschaubild zum hervorgehobenen Projekt Portfolio-Webseite">
+            <h3>Portfolio-Webseite</h3>
+            <p>
+              Dieses Projekt bildet den Kern meines Moduls Webprogrammierung.
+              Ziel war die Entwicklung einer responsiven, mehrseitigen Website
+              mit semantischem HTML, CSS, modularen Komponenten und einem klaren
+              Fokus auf Struktur und Nutzerfreundlichkeit.
+            </p>
+            <a href="#" class="card-link">Mehr ansehen</a>
+          </article>
+
+          <article class="featured-project-card">
+            <img src="images/logo.png" alt="Vorschaubild zum hervorgehobenen Projekt Responsive Layout">
+            <h3>Responsive Layout und Komponenten</h3>
+            <p>
+              In diesem Teilprojekt stand die Umsetzung responsiver Layouts mit
+              Grid, Flexbox und Breakpoints im Mittelpunkt. Zusätzlich wurden
+              wiederverwendbare Komponenten entwickelt, um die Wartbarkeit der
+              Website zu verbessern.
+            </p>
+            <a href="#" class="card-link">Mehr ansehen</a>
+          </article>
+        </div>
+      </section>
     </section>
   </main>
 
   <footer></footer>
-
 </body>
 
 </html>
