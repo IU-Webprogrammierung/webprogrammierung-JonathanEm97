@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lebenslauf</title>
   <link rel="stylesheet" href="css/style.css" />
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
   <script src="js/script.js" defer></script>
 </head>
 
@@ -16,33 +16,154 @@
   </header>
 
   <main>
-    <section>
+    <section class="cv-page">
       <h1>Lebenslauf</h1>
 
-      <h2>Ausbildung</h2>
-      <ul>
-        <li>Studium im Bereich Webentwicklung / Informatik</li>
-        <li>Grundlagen der Programmierung und Webtechnologien</li>
-      </ul>
+      <div class="cv-columns">
+        <section class="cv-section">
+          <h2>Bildung</h2>
 
-      <h2>Kenntnisse</h2>
-      <ul>
-        <li>HTML und CSS</li>
-        <li>Responsive Webdesign</li>
-        <li>Versionskontrolle mit Git</li>
-      </ul>
+          <article class="cv-card">
+            <p class="cv-date">seit 2024</p>
+            <h3>Studium UX-Design (B.A.)</h3>
+            <p>IU Internationale Hochschule</p>
+            <p>
+              Schwerpunkte in nutzerzentrierter Gestaltung, digitaler Kommunikation,
+              Konzeption und Webprogrammierung.
+            </p>
+          </article>
 
-      <h2>Interessen</h2>
-      <ul>
-        <li>Webentwicklung</li>
-        <li>Technologie und Software</li>
-        <li>Digitale Gestaltung</li>
-      </ul>
+          <article class="cv-card">
+            <p class="cv-date">2023 – 2024</p>
+            <h3>Vertiefung digitaler Gestaltung</h3>
+            <p>Eigenständige Weiterbildung und Projektarbeit</p>
+            <p>
+              Auseinandersetzung mit responsivem Webdesign, Layoutsystemen,
+              HTML-Struktur und visueller Kommunikation.
+            </p>
+          </article>
+
+          <article class="cv-card">
+            <p class="cv-date">bis 2023</p>
+            <h3>Schulische und fachliche Grundlagen</h3>
+            <p>Vorbereitung auf den Einstieg in digitale und gestalterische Themenfelder</p>
+            <p>
+              Aufbau von Grundkenntnissen in Strukturierung, technischer Umsetzung
+              und digitaler Arbeitsweise.
+            </p>
+          </article>
+        </section>
+
+        <section class="cv-section">
+          <h2>Arbeitserfahrung</h2>
+
+          <article class="cv-card">
+            <p class="cv-date">Projektphase</p>
+            <h3>Entwicklung Portfolio-Webseite</h3>
+            <p>Studienprojekt im Modul Webprogrammierung</p>
+            <p>
+              Planung und Umsetzung einer responsiven Website mit HTML, CSS,
+              semantischer Struktur und modularen Komponenten.
+            </p>
+          </article>
+
+          <article class="cv-card">
+            <p class="cv-date">Projektphase</p>
+            <h3>Responsive Layouts und Komponenten</h3>
+            <p>Praktische Vertiefung im Studium</p>
+            <p>
+              Entwicklung responsiver Layouts mit Flexbox, Grid und Breakpoints
+              sowie Verbesserung der Wartbarkeit durch wiederverwendbare Komponenten.
+            </p>
+          </article>
+
+          <article class="cv-card">
+            <p class="cv-date">Projektphase</p>
+            <h3>Barrierearme Webgestaltung</h3>
+            <p>Fokus auf UX und Accessibility</p>
+            <p>
+              Verbesserung von Fokuszuständen, Navigation, semantischer HTML-Struktur
+              und ARIA-Attributen für bessere Nutzbarkeit.
+            </p>
+          </article>
+
+          <article class="cv-card">
+            <p class="cv-date">laufend</p>
+            <h3>Weiterentwicklung technischer Kompetenzen</h3>
+            <p>Praxisorientiertes Lernen</p>
+            <p>
+              Kontinuierliche Erweiterung meiner Kenntnisse in Webentwicklung,
+              Gestaltungssystemen und strukturiertem Arbeiten mit Git.
+            </p>
+          </article>
+        </section>
+      </div>
+
+      <section class="cv-skills">
+        <h2>Fähigkeiten</h2>
+
+        <div class="cv-skills-grid">
+          <article class="skill-card">
+            <h3>HTML</h3>
+            <div class="skill-bar">
+              <div class="skill-level skill-level-html"></div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <h3>CSS</h3>
+            <div class="skill-bar">
+              <div class="skill-level skill-level-css"></div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <h3>Responsive Webdesign</h3>
+            <div class="skill-bar">
+              <div class="skill-level skill-level-responsive"></div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <h3>Git</h3>
+            <div class="skill-bar">
+              <div class="skill-level skill-level-git"></div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <h3>Semantisches HTML</h3>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 80%;"></div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <h3>Accessibility</h3>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 70%;"></div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <h3>Layout mit Grid/Flexbox</h3>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 78%;"></div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <h3>Strukturierte Webkonzeption</h3>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 76%;"></div>
+            </div>
+          </article>
+        </div>
+      </section>
     </section>
   </main>
 
   <footer></footer>
-
 </body>
 
 </html>
