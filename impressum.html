@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Impressum</title>
   <link rel="stylesheet" href="css/style.css" />
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
   <script src="js/script.js" defer></script>
 </head>
 
@@ -16,28 +16,41 @@
   </header>
 
   <main>
-    <section>
+    <section class="impressum-page">
       <h1>Impressum</h1>
 
-      <p>
-        Jonathan Eidam<br>
-        Musterstraße 1<br>
-        12345 Musterstadt<br>
-        Deutschland
-      </p>
+      <div class="impressum-content">
+        <section class="impressum-card">
+          <h2>Angaben gemäß § 5 TMG</h2>
+          <address>
+            Jonathan Eidam<br>
+            Musterstraße 1<br>
+            12345 Musterstadt<br>
+            Deutschland
+          </address>
+        </section>
 
-      <p>
-        E-Mail: jonathaneidam@example.de
-      </p>
+        <section class="impressum-card">
+          <h2>Kontakt</h2>
+          <p>
+            E-Mail:
+            <a href="mailto:jonathaneidam@example.de">jonathaneidam@example.de</a>
+          </p>
+        </section>
 
-      <p>
-        Dies ist ein studentisches Projekt im Rahmen eines Studiums.
-      </p>
+        <section class="impressum-card">
+          <h2>Hinweis</h2>
+          <p>
+            Dies ist ein studentisches Projekt im Rahmen eines Studiums. Die
+            Inhalte dieser Website dienen der Darstellung eines persönlichen
+            Portfolios zu Lern- und Präsentationszwecken.
+          </p>
+        </section>
+      </div>
     </section>
   </main>
 
   <footer></footer>
-
 </body>
 
 </html>

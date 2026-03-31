@@ -328,7 +328,6 @@ footer {
 
     a {
         align-self: flex-start;
-        /* 👈 DAS ist die Lösung */
     }
 
     h2 {
@@ -856,6 +855,54 @@ footer {
 /* impressum page */
 /* ========================= */
 
+.impressum-page {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-block: 2rem;
+
+    h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        line-height: 1.1;
+    }
+}
+
+.impressum-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.impressum-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    border: 0.0625rem solid #ddd;
+    border-radius: 0.375rem;
+    background-color: #f9f9f9;
+
+    h2 {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    a {
+        color: #333;
+        text-decoration: underline;
+    }
+
+    address {
+        font-style: normal;
+        line-height: 1.8;
+    }
+}
+
 /* ========================= */
 /* Breakpoints */
 /* ========================= */
@@ -933,6 +980,10 @@ footer {
     .contact-layout {
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
+    }
+
+    .impressum-content {
+        grid-template-columns: 1fr 1fr;
     }
 
 }
@@ -1023,7 +1074,7 @@ footer {
 
 @media (max-width: 64rem) {
 
-    /* 👇 NEU: Bild kleiner auf Mobile/Tablet */
+    /* Bild kleiner auf Mobile/Tablet */
     .hero-image img {
         max-width: 18rem;
     }
