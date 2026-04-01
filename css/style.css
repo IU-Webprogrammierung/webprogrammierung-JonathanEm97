@@ -1,9 +1,35 @@
+/* ========================= */
+/* Design System / Farben */
+/* ========================= */
+
+:root {
+    /* Hintergrund */
+    --color-bg: #f5f7fa;
+    --color-surface: #ffffff;
+
+    /* Text */
+    --color-text: #1a1a1a;
+    --color-text-light: #555;
+
+    /* Primary */
+    --color-primary: #3b5b8a;
+    --color-primary-dark: #2f4a73;
+
+    /* Border */
+    --color-border: #e5e7eb;
+
+    /* Hover */
+    --color-hover: #eff6ff;
+}
+
 /* Grundlayout */
 
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: var(--color-bg);
+    color: var(--color-text);
 
     /* verhindert Scrollen wenn Overlay-Menü geöffnet ist */
     &.menu-open {
@@ -14,7 +40,7 @@ body {
 /* Header */
 
 header {
-    background-color: #f5f5f5;
+    background-color: var(--color-surface);
     padding: 1rem;
     position: relative;
     z-index: 1000;
@@ -30,16 +56,16 @@ nav {
 
     a {
         text-decoration: none;
-        color: #333;
+        color: var(--color-text);
         font-weight: bold;
         transition: color 0.2s ease;
 
         &:hover {
-            color: #000000;
+            color: var(--color-primary);
         }
 
         &:focus {
-            outline: 0.125rem solid #333;
+            outline: 0.125rem solid var(--color-primary);
             outline-offset: 0.125rem;
         }
     }
@@ -55,7 +81,7 @@ nav {
 input:focus,
 textarea:focus,
 button:focus {
-    outline: 0.125rem solid #333;
+    outline: 0.125rem solid var(--color-primary);
     outline-offset: 0.125rem;
 }
 
@@ -112,7 +138,7 @@ main {
 /* Footer */
 
 footer {
-    background-color: #f5f5f5;
+    background-color: var(--color-surface);
     padding: 2rem 1rem;
     margin-top: 2rem;
 }
@@ -132,7 +158,7 @@ footer {
 
     a {
         text-decoration: none;
-        color: #333;
+        color: var(--color-text);
 
         &:hover {
             text-decoration: underline;
@@ -150,15 +176,15 @@ footer {
     a {
         display: inline-block;
         padding: 0.5rem 1rem;
-        border: 0.0625rem solid #333;
+        border: 0.0625rem solid var(--color-primary);
         border-radius: 0.375rem;
         text-decoration: none;
-        color: #333;
+        color: var(--color-primary);
         font-size: 0.9rem;
         transition: background-color 0.2s ease, color 0.2s ease;
 
         &:hover {
-            background-color: #333;
+            background-color: var(--color-primary);
             color: white;
         }
     }
@@ -203,21 +229,26 @@ footer {
 .button-link {
     display: inline-block;
     padding: 0.75rem 1rem;
-    border: 0.0625rem solid #333;
+    border: 0.0625rem solid var(--color-primary);
     border-radius: 0.375rem;
     text-decoration: none;
-    color: #333;
     font-weight: bold;
+    background-color: transparent;
+    color: var(--color-primary);
     transition: background-color 0.2s ease, color 0.2s ease;
-
-    &:hover {
-        background-color: #333;
-        color: white;
-    }
 }
 
-.button-link.secondary {
-    background-color: transparent;
+.button-link.primary {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.button-link.primary:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.button-link.secondary:hover {
+    background-color: var(--color-hover);
 }
 
 .hero-image {
@@ -257,9 +288,9 @@ footer {
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
-    border: 0.0625rem solid #ddd;
+    border: 0.0625rem solid  var(--color-border);
     border-radius: 0.375rem;
-    background-color: #f9f9f9;
+    background-color: var(--color-surface);
 
     img {
         width: 100%;
@@ -282,15 +313,15 @@ footer {
     align-self: flex-start;
     display: inline-block;
     padding: 0.6rem 0.9rem;
-    border: 0.0625rem solid #333;
+    border: 0.0625rem solid var(--color-primary);
     border-radius: 0.375rem;
     text-decoration: none;
-    color: #333;
+    color: var(--color-primary);
     font-weight: bold;
     transition: background-color 0.2s ease, color 0.2s ease;
 
     &:hover {
-        background-color: #333;
+        background-color: var(--color-primary);
         color: white;
     }
 }
@@ -363,9 +394,9 @@ footer {
 
 .skill-card {
     padding: 1rem;
-    border: 0.0625rem solid #ddd;
+    border: 0.0625rem solid var(--color-border);
     border-radius: 0.375rem;
-    background-color: #f9f9f9;
+    background-color: var(--color-surface);
 
     h3 {
         margin: 0 0 0.75rem 0;
@@ -377,14 +408,14 @@ footer {
 .skill-bar {
     width: 100%;
     height: 0.75rem;
-    background-color: #ddd;
+    background-color: var(--color-border);
     border-radius: 999rem;
     overflow: hidden;
 }
 
 .skill-level {
     height: 100%;
-    background-color: #666;
+    background-color: var(--color-primary);
     border-radius: 999rem;
 }
 
