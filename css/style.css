@@ -289,9 +289,20 @@ footer {
     background-color: var(--color-surface);
 
     h3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
         margin: 0 0 0.75rem 0;
         font-size: 1rem;
         text-align: center;
+    }
+
+    svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        color: var(--color-primary);
     }
 }
 
@@ -312,20 +323,36 @@ footer {
 }
 
 /* Skill Variants */
-.skill-level-html {
+.skill-level-dashboard {
     width: 85%;
 }
 
-.skill-level-css {
+.skill-level-dataviz {
+    width: 90%;
+}
+
+.skill-level-powerbi {
+    width: 85%;
+}
+
+.skill-level-ux {
     width: 80%;
+}
+
+.skill-level-user {
+    width: 80%;
+}
+
+.skill-level-web {
+    width: 75%;
 }
 
 .skill-level-responsive {
     width: 75%;
 }
 
-.skill-level-git {
-    width: 65%;
+.skill-level-storytelling {
+    width: 85%;
 }
 
 /* Social Buttons */
@@ -471,7 +498,12 @@ footer {
     grid-template-columns: 1fr;
     gap: 2rem;
     align-items: center;
-    padding-block: 2rem;
+
+    margin-block: 3rem;
+    padding: 2rem;
+
+    background-color: var(--color-surface);
+    border-radius: 0.5rem;
 }
 
 /* About Image */
@@ -513,7 +545,7 @@ footer {
 .home-skills {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 0.75rem;
     padding-block: 2rem;
     align-items: center;
 
@@ -521,6 +553,15 @@ footer {
         margin: 0;
         font-size: 1.75rem;
     }
+}
+
+/* Skills Intro */
+.section-intro {
+    max-width: 40rem;
+    margin: 0 auto 1.25rem auto;
+    text-align: center;
+    color: var(--color-text-light);
+    font-size: 1.05rem;
 }
 
 /* Skills Grid */
@@ -535,6 +576,7 @@ footer {
 .home-skills-action {
     display: flex;
     justify-content: center;
+    margin-top: 1.5rem;
 }
 
 /* ========================= */

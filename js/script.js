@@ -49,3 +49,5 @@ $("nav").load("components/nav.component", function () {
 
 // Footer laden (wird in <footer> eingefügt)
 $("footer").load("components/footer.component");
+
+lucide.createIcons();

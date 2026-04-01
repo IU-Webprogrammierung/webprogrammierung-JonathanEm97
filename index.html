@@ -10,153 +10,212 @@
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="js/script.js" defer></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body id="top">
 
   <header>
-        <nav></nav>
+    <nav></nav>
   </header>
 
   <main>
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Data Analyst | UX-powered Data Reporting</h1>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Data Analyst | UX-powered Data Reporting</h1>
 
-      <p>
-        Daten verständlich gemacht: Interaktive Dashboards und Reports, die zeigen,
-        was wirklich wichtig ist – klar visualisiert mit Power BI und Tableau. 
+        <p>
+          Daten verständlich gemacht: Interaktive Dashboards und Reports, die zeigen,
+          was wirklich wichtig ist – klar visualisiert mit Power BI und Tableau.
+        </p>
+
+        <p>
+          Mein Name ist Jonathan Eidam. Nach über 7 Jahren Erfahrung als Webdesigner und SEO-/SEA-Manager, habe ich mich
+          vor über zwei Jahren auf Datenanalyse und die Entwicklung klar strukturierter Dashboards spezialisiert.
+        </p>
+
+        <div class="hero-actions">
+          <a href="projects.html" class="button-link primary">Projekte ansehen</a>
+          <a href="about.html" class="button-link secondary">Über mich</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="images/jonathan-eidam-transparent.png" alt="Bild von Jonathan Eidam">
+      </div>
+    </section>
+
+    <section class="home-projects">
+      <h2>Projekte</h2>
+
+      <div class="project-preview-grid">
+
+        <!-- Projekt 1: Data / Dashboard -->
+        <article class="project-card">
+          <img src="images/PowerBI-Report.png" alt="Vorschaubild zum Projekt Dashboard">
+          <h3>Datenvisualisierung & Dashboarding</h3>
+          <p>
+            Entwicklung interaktiver Dashboards zur Darstellung zentraler KPIs.
+            Fokus auf verständliche Visualisierung und schnelle Entscheidungsgrundlagen.
+          </p>
+          <a href="projects.html" class="card-link">Mehr ansehen</a>
+        </article>
+
+        <!-- Projekt 2: UX + Website -->
+        <article class="project-card">
+          <img src="images/Portfolio-Website.png" alt="Vorschaubild zur Portfolio-Webseite">
+          <h3>UX & Portfolio-Webseite</h3>
+          <p>
+            Konzeption und Umsetzung einer responsiven Webseite mit klarem
+            Fokus auf Nutzerführung, Struktur und barrierearme Gestaltung.
+          </p>
+          <a href="projects.html" class="card-link">Mehr ansehen</a>
+        </article>
+
+        <!-- Projekt 3: UX / Struktur -->
+        <article class="project-card">
+          <img src="images/UX_redesign.png" alt="Vorschaubild zum UX-Projekt">
+          <h3>UX & Informationsstruktur</h3>
+          <p>
+            Gestaltung digitaler Oberflächen mit Fokus auf intuitive Navigation,
+            klare Inhalte und eine verständliche Nutzerführung.
+          </p>
+          <a href="projects.html" class="card-link">Mehr ansehen</a>
+        </article>
+
+      </div>
+
+      <div class="home-projects-action">
+        <a href="projects.html" class="button-link">Alle Projekte ansehen</a>
+      </div>
+    </section>
+
+
+    <section class="home-about">
+      <div class="home-about-image">
+        <img src="images/ueber_mich.png" alt="Porträt von Jonathan Eidam">
+      </div>
+
+      <div class="home-about-text">
+        <h2>Über mich</h2>
+
+        <p>
+          Ich studiere UX-Design und beschäftige mich besonders mit der Verbindung
+          von Gestaltung, Struktur und nutzerfreundlicher digitaler Kommunikation.
+        </p>
+
+        <p>
+          Im Modul Webprogrammierung entwickle ich meine Kenntnisse in HTML, CSS,
+          Responsive Webdesign und barrierearmer Gestaltung weiter.
+        </p>
+
+        <p>
+          Mein Ziel ist es, visuell ansprechende und zugleich gut strukturierte
+          Webseiten zu gestalten, die auf unterschiedlichen Geräten zuverlässig
+          funktionieren.
+        </p>
+
+        <a href="about.html" class="button-link">Mehr erfahren</a>
+      </div>
+    </section>
+
+    <section class="home-skills">
+      <h2>Fähigkeiten</h2>
+
+      <p class="section-intro">
+        Meine Kernkompetenzen verbinden Datenanalyse, Visualisierung und nutzerzentriertes Design.
       </p>
 
-      <p>
-        Mein Name ist Jonathan Eidam. Nach über 7 Jahren Erfahrung als Webdesigner und SEO-/SEA-Manager, habe ich mich 
-        vor über zwei Jahren auf Datenanalyse und die Entwicklung klar strukturierter Dashboards spezialisiert.
-      </p>
+      <div class="skills-grid">
 
-      <div class="hero-actions">
-        <a href="projects.html" class="button-link primary">Projekte ansehen</a>
-        <a href="about.html" class="button-link secondary">Über mich</a>
+        <article class="skill-card">
+          <h3>
+            <i data-lucide="bar-chart-3"></i>
+            Dashboard Design
+          </h3>
+          <div class="skill-bar">
+            <div class="skill-level skill-level-dashboard"></div>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <h3>
+            <i data-lucide="pie-chart"></i>
+            Data Visualization
+          </h3>
+          <div class="skill-bar">
+            <div class="skill-level skill-level-dataviz"></div>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <h3>
+            <i data-lucide="layout-dashboard"></i>
+            Power BI / Tableau
+          </h3>
+          <div class="skill-bar">
+            <div class="skill-level skill-level-powerbi"></div>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <h3>
+            <i data-lucide="database"></i>
+            SQL & Data Analysis
+          </h3>
+          <div class="skill-bar">
+            <div class="skill-level skill-level-ux"></div>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <h3>
+            <i data-lucide="presentation"></i>
+            Stakeholder Reporting
+          </h3>
+          <div class="skill-bar">
+            <div class="skill-level skill-level-user"></div>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <h3>
+            <i data-lucide="pen-tool"></i>
+            UX Design
+          </h3>
+          <div class="skill-bar">
+            <div class="skill-level skill-level-web"></div>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <h3>
+            <i data-lucide="search"></i>
+            UX Research
+          </h3>
+          <div class="skill-bar">
+            <div class="skill-level skill-level-responsive"></div>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <h3>
+            <i data-lucide="monitor"></i>
+            Webdesign
+          </h3>
+          <div class="skill-bar">
+            <div class="skill-level skill-level-storytelling"></div>
+          </div>
+        </article>
+
       </div>
-    </div>
 
-    <div class="hero-image">
-      <img src="images/jonathan-eidam-transparent.png" alt="Bild von Jonathan Eidam">
-    </div>
-  </section>
-
-<section class="home-projects">
-  <h2>Projekte</h2>
-
-  <div class="project-preview-grid">
-
-    <!-- Projekt 1: Data / Dashboard -->
-    <article class="project-card">
-      <img src="images/PowerBI-Report.png" alt="Vorschaubild zum Projekt Dashboard">
-      <h3>Datenvisualisierung & Dashboarding</h3>
-      <p>
-        Entwicklung interaktiver Dashboards zur Darstellung zentraler KPIs.
-        Fokus auf verständliche Visualisierung und schnelle Entscheidungsgrundlagen.
-      </p>
-      <a href="projects.html" class="card-link">Mehr ansehen</a>
-    </article>
-
-    <!-- Projekt 2: UX + Website -->
-    <article class="project-card">
-      <img src="images/Portfolio-Website.png" alt="Vorschaubild zur Portfolio-Webseite">
-      <h3>UX & Portfolio-Webseite</h3>
-      <p>
-        Konzeption und Umsetzung einer responsiven Webseite mit klarem
-        Fokus auf Nutzerführung, Struktur und barrierearme Gestaltung.
-      </p>
-      <a href="projects.html" class="card-link">Mehr ansehen</a>
-    </article>
-
-    <!-- Projekt 3: UX / Struktur -->
-    <article class="project-card">
-      <img src="images/UX_redesign.png" alt="Vorschaubild zum UX-Projekt">
-      <h3>UX & Informationsstruktur</h3>
-      <p>
-        Gestaltung digitaler Oberflächen mit Fokus auf intuitive Navigation,
-        klare Inhalte und eine verständliche Nutzerführung.
-      </p>
-      <a href="projects.html" class="card-link">Mehr ansehen</a>
-    </article>
-
-  </div>
-
-  <div class="home-projects-action">
-    <a href="projects.html" class="button-link">Alle Projekte ansehen</a>
-  </div>
-</section>
-
-
-<section class="home-about">
-  <div class="home-about-image">
-    <img src="images/ueber_mich.png" alt="Porträt von Jonathan Eidam">
-  </div>
-
-  <div class="home-about-text">
-    <h2>Über mich</h2>
-
-    <p>
-      Ich studiere UX-Design und beschäftige mich besonders mit der Verbindung
-      von Gestaltung, Struktur und nutzerfreundlicher digitaler Kommunikation.
-    </p>
-
-    <p>
-      Im Modul Webprogrammierung entwickle ich meine Kenntnisse in HTML, CSS,
-      Responsive Webdesign und barrierearmer Gestaltung weiter.
-    </p>
-
-    <p>
-      Mein Ziel ist es, visuell ansprechende und zugleich gut strukturierte
-      Webseiten zu gestalten, die auf unterschiedlichen Geräten zuverlässig
-      funktionieren.
-    </p>
-
-    <a href="about.html" class="button-link">Mehr erfahren</a>
-  </div>
-</section>
-
-<section class="home-skills">
-  <h2>Fähigkeiten</h2>
-
-  <div class="skills-grid">
-    <article class="skill-card">
-      <h3>HTML</h3>
-      <div class="skill-bar">
-        <div class="skill-level skill-level-html"></div>
+      <div class="home-skills-action">
+        <a href="cv.html" class="button-link primary">Zum Lebenslauf</a>
       </div>
-    </article>
+    </section>
 
-    <article class="skill-card">
-      <h3>CSS</h3>
-      <div class="skill-bar">
-        <div class="skill-level skill-level-css"></div>
-      </div>
-    </article>
-
-    <article class="skill-card">
-      <h3>Responsive Webdesign</h3>
-      <div class="skill-bar">
-        <div class="skill-level skill-level-responsive"></div>
-      </div>
-    </article>
-
-    <article class="skill-card">
-      <h3>Git</h3>
-      <div class="skill-bar">
-        <div class="skill-level skill-level-git"></div>
-      </div>
-    </article>
-  </div>
-
-  <div class="home-skills-action">
-    <a href="cv.html" class="button-link">Zum Lebenslauf</a>
-  </div>
-</section>
-  
-</main>
+  </main>
 
   <footer></footer>
 
