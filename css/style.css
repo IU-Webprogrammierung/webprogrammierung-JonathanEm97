@@ -529,9 +529,11 @@ footer {
 
 .home-about-image img {
     width: 100%;
-    max-width: 24rem;
-    height: auto;
+    max-width: 22rem;
+    height: 100%;
+    object-fit: cover;
     display: block;
+    border-radius: 0.375rem;
 }
 
 /* About Text */
@@ -616,7 +618,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
-    align-items: start;
+    align-items: stretch;
 }
 
 /* About Image */
