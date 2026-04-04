@@ -636,7 +636,6 @@ footer {
 
 /* About Sections (Textbereiche) */
 .about-career,
-.about-skills,
 .social-links {
     display: flex;
     flex-direction: column;
@@ -653,27 +652,56 @@ footer {
     }
 }
 
-/* Skills Grid */
-.about-skills-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-}
-
-.about-skills-grid ul {
-    margin: 0;
-    padding-left: 1.25rem;
-}
-
-.about-skills-grid li {
-    margin-bottom: 0.5rem;
-}
-
 /* Social Icons Layout */
 .social-icons {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+}
+
+/* About Personal Section */
+.about-personal {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--color-surface);
+    border-radius: 0.5rem;
+}
+
+.about-personal-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    h2 {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    p {
+        margin: 0;
+        font-size: 1.125rem;
+    }
+
+    a {
+        color: var(--color-primary);
+        text-decoration: underline;
+    }
+}
+
+.about-personal-image {
+    display: flex;
+    justify-content: center;
+}
+
+.about-personal-image img {
+    width: 100%;
+    max-width: 22rem;
+    height: auto;
+    display: block;
+    border-radius: 0.375rem;
 }
 
 /* ========================= */
@@ -1057,7 +1085,7 @@ footer {
 
     .about-image {
         grid-column: 1;
-        grid-row: 1 / span 3;
+        grid-row: 1 / span 2;
     }
 
     .about-career {
@@ -1070,13 +1098,9 @@ footer {
         grid-row: 2;
     }
 
-    .about-skills {
-        grid-column: 2;
-        grid-row: 3;
-    }
-
-    .about-skills-grid {
+    .about-personal {
         grid-template-columns: 1fr 1fr;
+        gap: 3rem;
     }
 
     /* projects page */
@@ -1173,22 +1197,12 @@ footer {
 
     .about-image {
         grid-column: 1;
-        grid-row: 1 / span 3;
+        grid-row: 1;
     }
 
     .about-career {
         grid-column: 2;
         grid-row: 1;
-    }
-
-    .social-links {
-        grid-column: 2;
-        grid-row: 2;
-    }
-
-    .about-skills {
-        grid-column: 2;
-        grid-row: 3;
     }
 
     /* projects page */
