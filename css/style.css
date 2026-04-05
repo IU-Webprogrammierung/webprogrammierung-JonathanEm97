@@ -26,6 +26,19 @@ html {
     scroll-behavior: smooth;
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg: #1a1a2e;
+        --color-surface: #16213e;
+        --color-text: #e0e0e0;
+        --color-text-light: #a0a0a0;
+        --color-primary: #6b8fc4;
+        --color-primary-dark: #8badd9;
+        --color-border: #2a2a4a;
+        --color-hover: #1f2b47;
+    }
+}
+
 /* ========================= */
 /* Grundlayout */
 /* ========================= */
@@ -440,6 +453,29 @@ footer {
         min-height: 10rem;
         resize: vertical;
     }
+}
+
+/* ========================= */
+/* Animationen               */
+/* ========================= */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(1.5rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-text {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-image {
+    animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
 /* ========================= */
