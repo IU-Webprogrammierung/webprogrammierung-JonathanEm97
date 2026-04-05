@@ -22,6 +22,10 @@
     --color-hover: #eff6ff;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* ========================= */
 /* Grundlayout */
 /* ========================= */
