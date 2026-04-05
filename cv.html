@@ -5,14 +5,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lebenslauf</title>
+
+  <!-- Stylesheet und Favicon -->
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="images/logo.png" type="image/png">
+
+  <!-- jQuery für Komponentenladung und eigenes Script -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
   <script src="js/script.js" defer></script>
+
+  <!-- Lucide-Icons für Skill-Cards -->
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body id="top">
+
+  <!-- Kopfzeile mit Navigation (wird per jQuery aus nav.component geladen) -->
   <header>
     <nav></nav>
   </header>
@@ -21,10 +29,14 @@
     <section class="cv-page">
       <h1>Lebenslauf</h1>
 
+      <!-- Zweispaltiges Layout: Bildung und Arbeitserfahrung -->
       <div class="cv-columns">
+
+        <!-- Linke Spalte: Bildungsweg -->
         <section class="cv-section">
           <h2>Bildung</h2>
 
+          <!-- Aktuelles Studium -->
           <article class="cv-card">
             <p class="cv-date">seit 2024</p>
             <h3>Studium UX-Design (B.A.)</h3>
@@ -35,6 +47,7 @@
             </p>
           </article>
 
+          <!-- Weiterbildungsphase -->
           <article class="cv-card">
             <p class="cv-date">2023 – 2024</p>
             <h3>Vertiefung digitaler Gestaltung</h3>
@@ -45,6 +58,7 @@
             </p>
           </article>
 
+          <!-- Schulische Grundlagen -->
           <article class="cv-card">
             <p class="cv-date">bis 2023</p>
             <h3>Schulische und fachliche Grundlagen</h3>
@@ -56,9 +70,11 @@
           </article>
         </section>
 
+        <!-- Rechte Spalte: Berufliche Erfahrung und Projekte -->
         <section class="cv-section">
           <h2>Arbeitserfahrung</h2>
 
+          <!-- Projekt: Portfolio-Webseite -->
           <article class="cv-card">
             <p class="cv-date">Projektphase</p>
             <h3>Entwicklung Portfolio-Webseite</h3>
@@ -69,6 +85,7 @@
             </p>
           </article>
 
+          <!-- Projekt: Responsive Layouts -->
           <article class="cv-card">
             <p class="cv-date">Projektphase</p>
             <h3>Responsive Layouts und Komponenten</h3>
@@ -79,6 +96,7 @@
             </p>
           </article>
 
+          <!-- Projekt: Barrierefreiheit -->
           <article class="cv-card">
             <p class="cv-date">Projektphase</p>
             <h3>Barrierearme Webgestaltung</h3>
@@ -89,6 +107,7 @@
             </p>
           </article>
 
+          <!-- Laufende Weiterentwicklung -->
           <article class="cv-card">
             <p class="cv-date">laufend</p>
             <h3>Weiterentwicklung technischer Kompetenzen</h3>
@@ -101,11 +120,13 @@
         </section>
       </div>
 
+      <!-- Fähigkeiten: Skill-Cards mit Lucide-Icons und Fortschrittsbalken -->
       <section class="cv-skills">
         <h2>Fähigkeiten</h2>
 
         <div class="skills-grid">
 
+          <!-- Skill 1: Dashboard Design -->
           <article class="skill-card">
             <h3>
               <i data-lucide="bar-chart-3"></i>
@@ -116,6 +137,7 @@
             </div>
           </article>
 
+          <!-- Skill 2: Data Visualization -->
           <article class="skill-card">
             <h3>
               <i data-lucide="pie-chart"></i>
@@ -126,6 +148,7 @@
             </div>
           </article>
 
+          <!-- Skill 3: Power BI / Tableau -->
           <article class="skill-card">
             <h3>
               <i data-lucide="layout-dashboard"></i>
@@ -136,6 +159,7 @@
             </div>
           </article>
 
+          <!-- Skill 4: SQL & Data Analysis -->
           <article class="skill-card">
             <h3>
               <i data-lucide="database"></i>
@@ -146,6 +170,7 @@
             </div>
           </article>
 
+          <!-- Skill 5: Stakeholder Reporting -->
           <article class="skill-card">
             <h3>
               <i data-lucide="presentation"></i>
@@ -156,6 +181,7 @@
             </div>
           </article>
 
+          <!-- Skill 6: UX Design -->
           <article class="skill-card">
             <h3>
               <i data-lucide="pen-tool"></i>
@@ -166,6 +192,7 @@
             </div>
           </article>
 
+          <!-- Skill 7: UX Research -->
           <article class="skill-card">
             <h3>
               <i data-lucide="search"></i>
@@ -176,6 +203,7 @@
             </div>
           </article>
 
+          <!-- Skill 8: Webdesign -->
           <article class="skill-card">
             <h3>
               <i data-lucide="monitor"></i>
@@ -190,6 +218,7 @@
 
       </section>
 
+      <!-- PDF-Download: Lebenslauf als Datei und eingebettete Vorschau -->
       <section class="cv-download">
         <h2>Lebenslauf als PDF</h2>
 
@@ -197,6 +226,7 @@
           Lebenslauf herunterladen
         </a>
 
+        <!-- Eingebettete PDF-Vorschau im iFrame -->
         <div class="cv-pdf">
           <iframe src="documents/lebenslauf.pdf" title="Lebenslauf PDF"></iframe>
         </div>
@@ -205,7 +235,9 @@
     </section>
   </main>
 
+  <!-- Footer (wird per jQuery aus footer.component geladen) -->
   <footer></footer>
+
 </body>
 
 </html>

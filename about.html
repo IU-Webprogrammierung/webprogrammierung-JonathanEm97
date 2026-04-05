@@ -5,13 +5,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Über mich</title>
+
+  <!-- Stylesheet und Favicon -->
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="images/logo.png" type="image/png">
+
+  <!-- jQuery für Komponentenladung und eigenes Script -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
   <script src="js/script.js" defer></script>
 </head>
 
 <body id="top">
+
+  <!-- Kopfzeile mit Navigation (wird per jQuery aus nav.component geladen) -->
   <header>
     <nav></nav>
   </header>
@@ -20,6 +26,7 @@
     <section class="about-page">
       <h1>Über mich</h1>
 
+      <!-- Beruflicher Werdegang: Portraitbild und Karrierebeschreibung -->
       <div class="about-content">
         <div class="about-image">
           <img src="images/ueber_mich2.png" alt="Porträt von Jonathan Eidam">
@@ -57,6 +64,7 @@
         </section>
       </div>
 
+      <!-- Persönlicher Bereich: Freizeit, Hobbys und Interessen -->
       <div class="about-personal">
         <div class="about-personal-text">
           <h2>Abseits des Schreibtischs</h2>
@@ -83,19 +91,22 @@
         </div>
       </div>
 
-        <section class="social-links">
-          <h2>Social Links</h2>
-          <div class="social-icons">
-            <a href="https://www.linkedin.com/in/jonathan-eidam/" aria-label="LinkedIn Profil">LinkedIn</a>
-            <a href="https://www.xing.com/profile/Jonathan_Eidam/web_profiles" aria-label="Xing Profil">Xing</a>
-            <a href="mailto:jonathan-eidam@web.de" aria-label="E-Mail schreiben">E-Mail</a>
-          </div>
-        </section>
+      <!-- Social Links: Verlinkung zu externen Profilen und E-Mail -->
+      <section class="social-links">
+        <h2>Social Links</h2>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/jonathan-eidam/" aria-label="LinkedIn Profil">LinkedIn</a>
+          <a href="https://www.xing.com/profile/Jonathan_Eidam/web_profiles" aria-label="Xing Profil">Xing</a>
+          <a href="mailto:jonathan-eidam@web.de" aria-label="E-Mail schreiben">E-Mail</a>
+        </div>
+      </section>
 
     </section>
   </main>
 
+  <!-- Footer (wird per jQuery aus footer.component geladen) -->
   <footer></footer>
+
 </body>
 
 </html>

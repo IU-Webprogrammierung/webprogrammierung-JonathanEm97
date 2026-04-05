@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meine schöne Webseite</title>
 
+  <!-- Stylesheet und Favicon -->
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="images/logo.png" type="image/png">
 
+  <!-- jQuery für Komponentenladung, eigenes Script und Lucide-Icons -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="js/script.js" defer></script>
   <script src="https://unpkg.com/lucide@latest"></script>
@@ -16,11 +18,14 @@
 
 <body id="top">
 
+  <!-- Kopfzeile mit Navigation (wird per jQuery aus nav.component geladen) -->
   <header>
     <nav></nav>
   </header>
 
   <main>
+
+    <!-- Hero-Bereich: Vorstellung mit Text und Portraitbild -->
     <section class="hero">
       <div class="hero-text">
         <h1>Data Analyst | UX-powered Data Reporting</h1>
@@ -35,6 +40,7 @@
           vor über zwei Jahren auf Datenanalyse und die Entwicklung klar strukturierter Dashboards spezialisiert.
         </p>
 
+        <!-- Call-to-Action Buttons -->
         <div class="hero-actions">
           <a href="projects.html" class="button-link primary">Projekte ansehen</a>
           <a href="about.html" class="button-link secondary">Über mich</a>
@@ -46,6 +52,7 @@
       </div>
     </section>
 
+    <!-- Projektvorschau: Drei ausgewählte Projekte als Kartenraster -->
     <section class="home-projects">
       <h2>Projekte</h2>
 
@@ -86,12 +93,13 @@
 
       </div>
 
+      <!-- Link zur vollständigen Projektübersicht -->
       <div class="home-projects-action">
         <a href="projects.html" class="button-link primary">Alle Projekte ansehen</a>
       </div>
     </section>
 
-
+    <!-- Über-mich-Teaser: Kurzvorstellung mit Bild und Text -->
     <section class="home-about">
       <div class="home-about-image">
         <img src="images/ueber_mich2.png" alt="Porträt von Jonathan Eidam">
@@ -120,6 +128,7 @@
       </div>
     </section>
 
+    <!-- Fähigkeiten: Skill-Cards mit Icons und Fortschrittsbalken -->
     <section class="home-skills">
       <h2>Fähigkeiten</h2>
 
@@ -129,6 +138,7 @@
 
       <div class="skills-grid">
 
+        <!-- Skill 1: Dashboard Design -->
         <article class="skill-card">
           <h3>
             <i data-lucide="bar-chart-3"></i>
@@ -139,6 +149,7 @@
           </div>
         </article>
 
+        <!-- Skill 2: Data Visualization -->
         <article class="skill-card">
           <h3>
             <i data-lucide="pie-chart"></i>
@@ -149,6 +160,7 @@
           </div>
         </article>
 
+        <!-- Skill 3: Power BI / Tableau -->
         <article class="skill-card">
           <h3>
             <i data-lucide="layout-dashboard"></i>
@@ -159,6 +171,7 @@
           </div>
         </article>
 
+        <!-- Skill 4: SQL & Data Analysis -->
         <article class="skill-card">
           <h3>
             <i data-lucide="database"></i>
@@ -169,6 +182,7 @@
           </div>
         </article>
 
+        <!-- Skill 5: Stakeholder Reporting -->
         <article class="skill-card">
           <h3>
             <i data-lucide="presentation"></i>
@@ -179,6 +193,7 @@
           </div>
         </article>
 
+        <!-- Skill 6: UX Design -->
         <article class="skill-card">
           <h3>
             <i data-lucide="pen-tool"></i>
@@ -189,6 +204,7 @@
           </div>
         </article>
 
+        <!-- Skill 7: UX Research -->
         <article class="skill-card">
           <h3>
             <i data-lucide="search"></i>
@@ -199,6 +215,7 @@
           </div>
         </article>
 
+        <!-- Skill 8: Webdesign -->
         <article class="skill-card">
           <h3>
             <i data-lucide="monitor"></i>
@@ -211,6 +228,7 @@
 
       </div>
 
+      <!-- Link zum vollständigen Lebenslauf -->
       <div class="home-skills-action">
         <a href="cv.html" class="button-link primary">Zum Lebenslauf</a>
       </div>
@@ -218,6 +236,7 @@
 
   </main>
 
+  <!-- Footer (wird per jQuery aus footer.component geladen) -->
   <footer></footer>
 
 </body>

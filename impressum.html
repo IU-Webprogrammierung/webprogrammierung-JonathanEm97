@@ -5,13 +5,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Impressum</title>
+
+  <!-- Stylesheet und Favicon -->
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="images/logo.png" type="image/png">
+
+  <!-- jQuery für Komponentenladung und eigenes Script -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
   <script src="js/script.js" defer></script>
 </head>
 
 <body id="top">
+
+  <!-- Kopfzeile mit Navigation (wird per jQuery aus nav.component geladen) -->
   <header>
     <nav></nav>
   </header>
@@ -20,7 +26,10 @@
     <section class="impressum-page">
       <h1>Impressum</h1>
 
+      <!-- Impressum-Karten: Rechtliche Pflichtangaben -->
       <div class="impressum-content">
+
+        <!-- Angaben zum Seitenbetreiber nach § 5 TMG -->
         <section class="impressum-card">
           <h2>Angaben gemäß § 5 TMG</h2>
           <address>
@@ -31,6 +40,7 @@
           </address>
         </section>
 
+        <!-- Kontaktmöglichkeit per E-Mail -->
         <section class="impressum-card">
           <h2>Kontakt</h2>
           <p>
@@ -39,6 +49,7 @@
           </p>
         </section>
 
+        <!-- Hinweis zum studentischen Kontext des Projekts -->
         <section class="impressum-card">
           <h2>Hinweis</h2>
           <p>
@@ -51,7 +62,9 @@
     </section>
   </main>
 
+  <!-- Footer (wird per jQuery aus footer.component geladen) -->
   <footer></footer>
+
 </body>
 
 </html>

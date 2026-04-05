@@ -5,13 +5,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kontakt</title>
+
+  <!-- Stylesheet und Favicon -->
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="images/logo.png" type="image/png">
+
+  <!-- jQuery für Komponentenladung und eigenes Script -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
   <script src="js/script.js" defer></script>
 </head>
 
 <body id="top">
+
+  <!-- Kopfzeile mit Navigation (wird per jQuery aus nav.component geladen) -->
   <header>
     <nav></nav>
   </header>
@@ -20,7 +26,10 @@
     <section class="contact-page">
       <h1>Trete in Kontakt</h1>
 
+      <!-- Zweispaltiges Layout: Formular links, Kontaktinfos rechts -->
       <div class="contact-layout">
+
+        <!-- Linke Spalte: Kontaktformular mit Validierung -->
         <div class="contact-form-column">
           <section class="contact-form-section">
             <h2>Kontaktformular</h2>
@@ -51,10 +60,12 @@
           </section>
         </div>
 
+        <!-- Rechte Spalte: Kontaktdaten und Karteneinbettung -->
         <div class="contact-info-column">
           <section class="contact-info-section">
             <h2>Kontakt Information</h2>
 
+            <!-- E-Mail-Kontakt -->
             <article class="contact-info-card">
               <div class="contact-info-icon" aria-hidden="true">✉</div>
               <div class="contact-info-text">
@@ -63,6 +74,7 @@
               </div>
             </article>
 
+            <!-- Telefon-Kontakt -->
             <article class="contact-info-card">
               <div class="contact-info-icon" aria-hidden="true">☎</div>
               <div class="contact-info-text">
@@ -71,6 +83,7 @@
               </div>
             </article>
 
+            <!-- Standort -->
             <article class="contact-info-card">
               <div class="contact-info-icon" aria-hidden="true">⌂</div>
               <div class="contact-info-text">
@@ -79,6 +92,7 @@
               </div>
             </article>
 
+            <!-- Eingebettete Google Maps Karte -->
             <div class="contact-map">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1134.2182529385918!2d9.985776325714568!3d53.54099860012424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1selbphilharmonie!5e0!3m2!1sen!2sde!4v1774897979373!5m2!1sen!2sde"
@@ -91,7 +105,9 @@
     </section>
   </main>
 
+  <!-- Footer (wird per jQuery aus footer.component geladen) -->
   <footer></footer>
+
 </body>
 
 </html>

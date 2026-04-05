@@ -5,13 +5,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projekte</title>
+
+  <!-- Stylesheet und Favicon -->
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="images/logo.png" type="image/png">
+
+  <!-- jQuery für Komponentenladung und eigenes Script -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
   <script src="js/script.js" defer></script>
 </head>
 
 <body id="top">
+
+  <!-- Kopfzeile mit Navigation (wird per jQuery aus nav.component geladen) -->
   <header>
     <nav></nav>
   </header>
@@ -20,7 +26,10 @@
     <section class="projects-page">
       <h1>Meine Projekte</h1>
 
+      <!-- Projektübersicht: Alle Projekte als Kartenraster -->
       <div class="projects-grid">
+
+        <!-- Projekt 1: Datenvisualisierung mit Power BI -->
         <article class="project-card">
           <img src="images/PowerBI-Report.png" alt="Vorschaubild zum Projekt Datenvisualisierung">
           <h2>Datenvisualisierung</h2>
@@ -35,6 +44,7 @@
           <a href="#" class="card-link">Mehr ansehen</a>
         </article>
 
+        <!-- Projekt 2: Portfolio-Webseite mit UX-Fokus -->
         <article class="project-card">
           <img src="images/Portfolio-Website.png" alt="Vorschaubild zum Projekt UX und Portfolio-Webseite">
           <h2>UX & Portfolio-Webseite</h2>
@@ -50,6 +60,7 @@
           <a href="#" class="card-link">Mehr ansehen</a>
         </article>
 
+        <!-- Projekt 3: UX-Redesign und Informationsarchitektur -->
         <article class="project-card">
           <img src="images/UX_redesign.png" alt="Vorschaubild zum Projekt UX und Informationsstruktur">
           <h2>UX & Informationsstruktur</h2>
@@ -64,6 +75,7 @@
           <a href="#" class="card-link">Mehr ansehen</a>
         </article>
 
+        <!-- Projekt 4: Webdesign und SEO für Wellness Lounge -->
         <article class="project-card">
           <img src="images/wellness_lounge.png" alt="Vorschaubild zum Projekt Webdesign und SEO Wellness Lounge">
           <h2>Webdesign & SEO</h2>
@@ -77,6 +89,7 @@
           <a href="#" class="card-link">Mehr ansehen</a>
         </article>
 
+        <!-- Projekt 5: Webdesign und SEO/SEA für Sporttherapeut -->
         <article class="project-card">
           <img src="images/Sport_therapeut.png" alt="Vorschaubild zum Projekt Webdesign und SEO SEA Sporttherapeut">
           <h2>Webdesign & SEO/SEA</h2>
@@ -90,6 +103,7 @@
           <a href="#" class="card-link">Mehr ansehen</a>
         </article>
 
+        <!-- Projekt 6: UI-Design für Hotel-Website -->
         <article class="project-card">
           <img src="images/eco_safari.png" alt="Vorschaubild zum Projekt UI Hotel-Website">
           <h2>UI</h2>
@@ -103,6 +117,7 @@
           <a href="#" class="card-link">Mehr ansehen</a>
         </article>
 
+        <!-- Projekt 7: UI/UX für Nachhaltigkeits-App -->
         <article class="project-card">
           <img src="images/wardrobe_wise.png" alt="Vorschaubild zum Projekt UI und UX Nachhaltigkeits-App">
           <h2>UI & UX</h2>
@@ -116,6 +131,7 @@
           <a href="#" class="card-link">Mehr ansehen</a>
         </article>
 
+        <!-- Projekt 8: Applied UX für Staubsauger-Reparatur-App -->
         <article class="project-card">
           <img src="images/applied_ux.png" alt="Vorschaubild zum Projekt Applied UX Staubsauger-App">
           <h2>Applied UX</h2>
@@ -129,11 +145,12 @@
           <a href="#" class="card-link">Mehr ansehen</a>
         </article>
 
+        <!-- Projekt 9: Unternehmenssoftware -->
         <article class="project-card">
           <img src="images/ui_unternehmenssoftware.png" alt="Vorschaubild zum Projekt Design Thinking Unternehmenssoftware">
           <h2>Design Thinking Process</h2>
           <p>
-            UI für Unternehmenssoftware: Konzeptionierung und Entwicklung eines Systems zur Erfassung, Verwaltung und Nachverfolgung von Rücksendungen.
+            UI für Unternehmenssoftware: Konzeptionierung und Entwicklung eines Systems zur Erfassung, Verwaltung und Nachverfolgung von Rücksendungen.
           </p>
           <div class="project-tags">
             <span>Design Thinking Process</span>
@@ -143,10 +160,13 @@
         </article>
       </div>
 
+      <!-- Ausgewählte Projekte: Hervorgehobene Power BI Dashboards -->
       <section class="featured-projects">
         <h2>Ausgewählte Projekte</h2>
 
         <div class="featured-projects-grid">
+
+          <!-- Featured 1: KPI-Dashboard -->
           <article class="project-card">
             <img src="images/UI_Dashboard.png" alt="Vorschaubild zum ausgewählten Projekt PowerBI Dashboard KPI-Visualisierung">
             <h3>PowerBI Report</h3>
@@ -156,6 +176,7 @@
             <a href="#" class="card-link">Mehr ansehen</a>
           </article>
 
+          <!-- Featured 2: Datenanalyse-Report -->
           <article class="project-card">
             <img src="images/UI_PowerBI.png" alt="Vorschaubild zum ausgewählten Projekt PowerBI Report Datenanalyse">
             <h3>PowerBI Report</h3>
@@ -164,12 +185,15 @@
             </p>
             <a href="#" class="card-link">Mehr ansehen</a>
           </article>
+
         </div>
       </section>
     </section>
   </main>
 
+  <!-- Footer (wird per jQuery aus footer.component geladen) -->
   <footer></footer>
+
 </body>
 
 </html>
