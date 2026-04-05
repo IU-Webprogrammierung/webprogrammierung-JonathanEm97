@@ -22,10 +22,12 @@
     --color-hover: #eff6ff;
 }
 
+   /* Smooth scroll behaviour */
 html {
     scroll-behavior: smooth;
 }
 
+   /* Dark Mode */
 @media (prefers-color-scheme: dark) {
     :root {
         --color-bg: #1a1a2e;
@@ -459,6 +461,7 @@ footer {
 /* Animationen               */
 /* ========================= */
 
+   /* 0.2 sec delay hero image */
 @keyframes fadeInUp {
     from {
         opacity: 0;
